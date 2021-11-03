@@ -43,6 +43,7 @@ gem 'mini_racer'
   
 group :development, :test do
  
+  
   gem 'rspec-rails', '~> 3.7'
  
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -62,6 +63,9 @@ group :development do
 end
 
 group :test do
+  
+  gem 'simplecov', require: false
+  
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
