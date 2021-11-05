@@ -46,7 +46,7 @@ group :development, :test do
   gem 'capybara'
   
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4.0'
+  # gem 'sqlite3', '~> 1.4.0'
   
   gem 'rspec-rails', '~> 3.7'
  
