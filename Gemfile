@@ -43,7 +43,7 @@ gem 'mini_racer'
   
 group :development, :test do
  
- # gem 'sqlite3', '~> 1.4.0'
+  gem 'sqlite3', '~> 1.4.0'
   
   gem 'capybara'
   
