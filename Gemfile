@@ -26,9 +26,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 group :production do
-  
-  gem 'sqlite3', '~> 1.4.0'
-  
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
 end
@@ -46,7 +43,7 @@ gem 'mini_racer'
   
 group :development, :test do
  
-
+  gem 'sqlite3', '~> 1.4.0'
   
   gem 'capybara'
   
