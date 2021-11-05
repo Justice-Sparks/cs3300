@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+gem 'sqlite3', '~> 1.4.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.6'
 # Use Puma as the app server
@@ -64,7 +66,6 @@ end
 group :test do
   
   gem 'simplecov', require: false
-  gem 'sqlite3', '~> 1.4.0'
 
   # Adds support for Capybara system testing and selenium driver
   # gem 'capybara', '>= 2.15'
