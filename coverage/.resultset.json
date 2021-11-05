@@ -1,6 +1,18 @@
 {
   "RSpec": {
     "coverage": {
+      "/root/cs3300/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/root/cs3300/app/helpers/projects_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/root/cs3300/app/controllers/projects_controller.rb": {
         "lines": [
           1,
@@ -82,30 +94,12 @@
       },
       "/root/cs3300/app/models/project.rb": {
         "lines": [
-          1,
-          null,
-          1,
-          1,
           null,
           null,
           1,
           null,
           1,
-          null,
-          null,
           1,
-          2,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -120,10 +114,10 @@
         "lines": [
           null,
           null,
-          null,
-          null,
-          null,
-          null
+          0,
+          0,
+          0,
+          0
         ],
         "branches": {
         }
@@ -131,24 +125,8 @@
       "/root/cs3300/app/channels/application_cable/connection.rb": {
         "lines": [
           null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/root/cs3300/app/helpers/projects_helper.rb": {
-        "lines": [
           0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/cs3300/app/helpers/application_helper.rb": {
-        "lines": [
+          0,
           0,
           0
         ],
@@ -174,6 +152,6 @@
         }
       }
     },
-    "timestamp": 1635949205
+    "timestamp": 1636070737
   }
 }
