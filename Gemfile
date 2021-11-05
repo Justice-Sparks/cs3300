@@ -3,8 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
-gem 'sqlite3', '~> 1.4.0'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.6'
 # Use Puma as the app server
@@ -28,6 +26,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 group :production do
+  
+  gem 'sqlite3', '~> 1.4.0'
+  
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
 end
@@ -45,6 +46,8 @@ gem 'mini_racer'
   
 group :development, :test do
  
+
+  
   gem 'capybara'
   
   gem 'rspec-rails', '~> 3.7'
