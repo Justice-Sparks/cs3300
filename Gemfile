@@ -64,6 +64,7 @@ end
 group :test do
   
   gem 'simplecov', require: false
+  gem 'sqlite3', '~> 1.4.0'
 
   # Adds support for Capybara system testing and selenium driver
   # gem 'capybara', '>= 2.15'
@@ -77,5 +78,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development , :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4.0'
 end
