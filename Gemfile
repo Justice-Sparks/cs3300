@@ -43,8 +43,10 @@ gem 'mini_racer'
   
 group :development, :test do
  
+  gem 'capybara'
+  
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+    gem 'sqlite3'
   
   gem 'rspec-rails', '~> 3.7'
  
@@ -64,7 +66,7 @@ end
 group :test do
   
   gem 'simplecov', require: false
-  gem 'capybara'
+
   # Adds support for Capybara system testing and selenium driver
   # gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
