@@ -1,8 +1,29 @@
 require 'rails_helper'
+require 'devise'
+
+
+# def login_user
+#    user = FactoryBot.create(:user)
+#    login_as(user)
+# end
+
+
+def new_user 
+  visit root_path
+  click_link "New Project"
+  click_link 'Sign up'
+  within("form") do
+    fill_in "Email", with: "testing@test.com"
+    fill_in "Password", with: "123456"
+    fill_in "Password confirmation", with: "123456"
+    click_button "Sign up"
+  end
+end
 
 RSpec.feature "Projects", type: :feature do
-  context "Create new project" do
+  context "Create new project" do     
     before(:each) do
+      new_user
       visit new_project_path
       within("form") do
         fill_in "Title", with: "Test title"
@@ -16,6 +37,7 @@ RSpec.feature "Projects", type: :feature do
     end
 
     scenario "should fail" do
+#      login_user
       click_button "Create Project"
       expect(page).to have_content("Description can't be blank")
     end
@@ -24,6 +46,7 @@ RSpec.feature "Projects", type: :feature do
   context "Update project" do
     let(:project) { Project.create(title: "Test title", description: "Test content") }
     before(:each) do
+      new_user
       visit edit_project_path(project)
     end
 
@@ -36,7 +59,7 @@ RSpec.feature "Projects", type: :feature do
     end
 
     scenario "should fail" do
-      within("form") do
+      within("form") do  
         fill_in "Description", with: ""
       end
       click_button "Update Project"
@@ -47,6 +70,7 @@ RSpec.feature "Projects", type: :feature do
   context "Remove existing project" do
     let!(:project) { Project.create(title: "Test title", description: "Test content") }
     scenario "remove project" do
+      new_user
       visit projects_path
       click_link "Destroy"
       expect(page).to have_content("Project was successfully destroyed")

@@ -1,5 +1,7 @@
 require "rails_helper"
 
+
+#Validating 
 RSpec.describe Project, type: :model do
   context "validations tests" do
     it "ensures the title is present" do
@@ -35,8 +37,9 @@ RSpec.describe Project, type: :model do
       Project.create(params)
       Project.create(params)
     end
-
+ 
     it "should return all projects" do
+#      login_user
       expect(Project.count).to eq(3)
     end
 

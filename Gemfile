@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+gem 'devise'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.6'
 # Use Puma as the app server
@@ -42,7 +45,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'mini_racer'
   
 group :development, :test do
- 
+  
   gem 'sqlite3', '~> 1.4.0'
   
   gem 'capybara'
@@ -51,6 +54,11 @@ group :development, :test do
  
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+ # %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+ #   gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'main'
+ # end
+
 end
 
 group :development do
@@ -64,6 +72,8 @@ group :development do
 end
 
 group :test do
+
+  gem 'factory_bot_rails'
   
   gem 'simplecov', require: false
 
@@ -80,3 +90,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development , :test do
   # Use sqlite3 as the database for Active Record
 end
+#gem 'devise', '~> 3.2.4'
