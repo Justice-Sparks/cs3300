@@ -10,7 +10,7 @@ require 'devise'
 
 def new_user 
   visit root_path
-  click_link "New Project"
+  click_link 'Sign-in/Sign-up'
   click_link 'Sign up'
   within("form") do
     fill_in "Email", with: "testing@test.com"

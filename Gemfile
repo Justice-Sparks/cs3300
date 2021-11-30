@@ -43,6 +43,8 @@ end
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'mini_racer'
+
+gem 'bootstrap-sass' 
   
 group :development, :test do
   
