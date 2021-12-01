@@ -15,7 +15,7 @@ RSpec.describe Project, type: :model do
     end
     
     it "should be able to save project" do
-      project = Project.new(title: "Title", description: "Some description content goes here")
+      project = Project.new(title: "Title", description: "Some description content goes here", link: "linkgoeshere")
       expect(project.save).to eq(true)
     end
   end
@@ -31,7 +31,7 @@ RSpec.describe Project, type: :model do
   # ...
 
   context "scopes tests" do
-    let(:params) { { title: "Title", description: "some description" } }
+    let(:params) { { title: "Title", description: "some description", link: "linkylink" } }
     before(:each) do
       Project.create(params)
       Project.create(params)
@@ -39,7 +39,6 @@ RSpec.describe Project, type: :model do
     end
  
     it "should return all projects" do
-#      login_user
       expect(Project.count).to eq(3)
     end
 
