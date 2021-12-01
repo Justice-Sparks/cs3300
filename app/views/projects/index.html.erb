@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Welcome To My Portfolio</h1>
+<h1> &nbsp&nbsp  Welcome To My Portfolio</h1>
 
-<h1>Projects</h1>
+
+<h1> &nbsp&nbsp Projects:</h1>
 
 <table>
   <thead>
@@ -11,14 +12,21 @@
     </tr>
   </thead>
 
+
+  <p> &nbsp&nbsp&nbsp Personal Info:  <br>
+      &nbsp&nbsp&nbsp - Fourth year cyber security student at University of Colorado, Colorado Springs <br>
+      &nbsp&nbsp&nbsp - Familiar with: C++, Java, Ruby on Rails, UNIX, and Assembly Language </p>  
+
+
   <tbody>
-    <% @projects.each do |project| %>
+  <p>  <br> &nbsp&nbsp&nbsp Project Title: ____________________ Project Description: ________________ Options:</p>
+  <% @projects.each do |project| %>
       <tr>
-        <td><%= project.title %></td>
-        <td><%= project.description %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.title %></td>   
+        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.description %></td>
+        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Show    ,', project if user_signed_in? %></td>  
+        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Edit    ,', edit_project_path(project) if user_signed_in? %></td>
+        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } if user_signed_in? %></td>
       </tr>
     <% end %>
   </tbody>
