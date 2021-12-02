@@ -15070,3 +15070,211 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 1175ms (Views: 1112.4ms | ActiveRecord: 8.2ms)
 
 
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 18:59:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (219.1ms)
+Completed 200 OK in 361ms (Views: 327.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:01:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 228ms (Views: 220.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/new" for 10.0.2.2 at 2021-12-02 19:02:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (36.8ms)
+  Rendered projects/new.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 292ms (Views: 199.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:02:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 171ms (Views: 148.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:02:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 140ms (Views: 134.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:02:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 139ms (Views: 135.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/new" for 10.0.2.2 at 2021-12-02 19:02:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (7.8ms)
+  Rendered projects/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 152ms (Views: 129.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:02:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 239ms (Views: 227.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/projects/new" for 10.0.2.2 at 2021-12-02 19:03:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (9.4ms)
+  Rendered projects/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 260ms (Views: 221.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/projects" for 10.0.2.2 at 2021-12-02 19:03:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zwkXkhvG5kouNAWGrzdv4UzJDwb6nGpLA/cn3cr3R0htEZHXN3SYO+ohhcvTCvwS8TcJKHcuUffZ1Q4tXGUdbQ==", "project"=>{"title"=>"Justice", "description"=>"sparks"}, "commit"=>"Create Project"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[36mProject Create (3.7ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Justice"], ["description", "sparks"], ["created_at", "2021-12-02 19:03:13.545352"], ["updated_at", "2021-12-02 19:03:13.545352"]]
+  ↳ app/controllers/projects_controller.rb:28
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:28
+Redirected to http://localhost:3000/projects/7
+Completed 302 Found in 88ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/projects/7" for 10.0.2.2 at 2021-12-02 19:03:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:22
+Completed 200 OK in 449ms (Views: 425.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:03:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 123ms (Views: 109.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:03:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 110ms (Views: 101.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:03:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 102ms (Views: 94.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:03:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 107ms (Views: 95.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/3/edit" for 10.0.2.2 at 2021-12-02 19:03:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:63
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.1ms)
+  Rendered projects/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 114ms (Views: 73.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for 10.0.2.2 at 2021-12-02 19:03:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:34
+  Rendered projects/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 86ms (Views: 82.7ms | ActiveRecord: 0.9ms)
+
+
