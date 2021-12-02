@@ -1,21 +1,21 @@
 
 <section class="bg-warning pt-5 pb-5">
-<div class="container">
+<div class="container-fluid">
   <div class="show">
     <p id="notice"><%= notice %></p>
 
     <p>
-      <strong> Project - Title:</strong>
+      <h3> Project - Title:</h3>
       <%= @project.title %>
     </p>
 
     <p>
-      <strong> Project - Description:</strong>
-    <%= @project.description %>
+      <h3>Project - Description:</h3>
+      <%= @project.description %>
     </p>
 
-    <%= link_to 'Edit', edit_project_path(@project) %> |
-    <%= link_to 'Back', projects_path %>
+    <%= link_to 'Edit', edit_project_path(@project), class: "btn btn-success" %> |
+    <%= link_to 'Back', projects_path , class: "btn btn-success" %>
   </div>
 </div>
 </section>

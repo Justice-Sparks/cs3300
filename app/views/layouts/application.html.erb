@@ -14,20 +14,20 @@
   <!-- Navigation-->
      <section class="bg-success pt-5 pb-5">  
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
-          <div class="container">
+          <div class="container-fluid">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
               <h1> Justice W. Sparks </h1>
-              <%= link_to " Home ", projects_path %>
+              <%= link_to " Home ", projects_path, class: "btn btn-success" %>
                 
-              <%= link_to 'Sign-in/Sign-up', new_project_path unless user_signed_in? %>                  
+              <%= link_to 'Sign-in/Sign-up', new_project_path, class: "btn btn-success" unless user_signed_in? %>                  
                
               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
               
-              <%= link_to 'Logout ' , destroy_user_session_path, :method => :delete if user_signed_in? %>  
+              <%= link_to 'Logout ' , destroy_user_session_path, :method => :delete , class: "btn btn-success" if user_signed_in? %>  
               
               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
               
-              <%= link_to ' New Project', new_project_path if user_signed_in? %>                           
+              <%= link_to ' New Project', new_project_path, class: "btn btn-success" if user_signed_in? %>                           
             </ul>
           </div>
         </nav>
