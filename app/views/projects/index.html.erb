@@ -23,19 +23,25 @@
     <h1> &nbsp&nbsp Projects:</h1>
   </section>
 
-  <tbody>
-  <p>  <br> &nbsp&nbsp&nbsp Project Title: ___________ Project Description: __________ Link to Project:____________
-  <% @projects.each do |project| %>
-      <tr>
-        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.title %></td>   
-        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.description %></td>
-        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.link %></td>
-        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'View Project', project if user_signed_in? %></td>  
-        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Edit Project', edit_project_path(project) if user_signed_in? %></td>
-        <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Destroy Project', project, method: :delete, data: { confirm: 'Are you sure?' } if user_signed_in? %></td>
-      </tr>
-    <% end %>
-  </tbody>
+  
+    <tbody>
+    <section class="bg-warning pt-5 pb-5">
+      <p>  <br> &nbsp&nbsp&nbsp Project Title: ___________ Project Description: __________ Link to Project:____________
+      <% @projects.each do |project| %>
+        <tr>
+          <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.title %></td>    
+          <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.description %></td>
+          <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.link %></td>
+          <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'View Project', project if user_signed_in? %></td>  
+          <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Edit Project', edit_project_path(project) if user_signed_in? %></td>
+          <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Destroy Project', project, method: :delete, data: { confirm: 'Are you sure?' } if user_signed_in? %></td>
+        </tr>
+      <% end %>
+    </section>  
+    </tbody>
+  
+
+
 </table>
 
 <br>
