@@ -35,7 +35,7 @@
           <tr>
             <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.title %></td>    
             <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= project.description %></td>
-            <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'View Project', project , class: "btn btn-primary" if user_signed_in? %></td>  
+            <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'View Project', project , class: "btn btn-primary"  %></td>  
             <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Edit Project', edit_project_path(project) ,  class: "btn btn-info"  if user_signed_in? %></td>
             <td> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= link_to 'Destroy Project', project, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-warning" if user_signed_in? %></td>
           </tr>
